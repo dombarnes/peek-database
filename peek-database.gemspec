@@ -5,12 +5,12 @@ require 'peek-database/version'
 
 Gem::Specification.new do |gem|
   gem.name          = 'peek-database'
-  gem.version       = Peek::Git::VERSION
-  gem.authors       = ['Garrett Bjerkhoel']
-  gem.email         = ['me@garrettbjerkhoel.com']
-  gem.description   = %q{Take a peek into the Git info of your Rails application.}
-  gem.summary       = %q{Take a peek into the Git info of your Rails application.}
-  gem.homepage      = 'https://github.com/peek/peek-git'
+  gem.version       = Peek::Database::VERSION
+  gem.authors       = ['Dominic Barnes']
+  gem.email         = ['dom@dombarnes.com']
+  gem.description   = %q{Display your current DB name in Peek.}
+  gem.summary       = %q{Display your current DB name in Peek.}
+  gem.homepage      = 'https://github.com/dombarnes/peek-database'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
