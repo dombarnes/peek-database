@@ -9,7 +9,7 @@ module Peek
       end
 
       def database_name
-        URI.parse(ENV['DATABASE_URL']).path.gsub('/', ) || ENV['DB_NAME']
+        URI.parse(ENV['DATABASE_URL']).path.gsub('/', '') || ENV['DB_NAME']
       end
 
       def database_host
