@@ -8,6 +8,10 @@ module Peek
       def initialize(options = {})
       end
 
+      def results
+        { duration: 'N/A', calls: 0 }
+      end
+
       def database_name
         URI.parse(ENV['DATABASE_URL']).path.gsub('/', '') || ENV['DB_NAME']
       end
